@@ -24,5 +24,8 @@ params = getCreds()
 params['debug'] = 'yes'
 response = debugAccessToken(params)
 
-print("\nExpires at: ")
+print("\nData Access Expires at: ")
 print(datetime.datetime.fromtimestamp(response['json_data']['data']['data_access_expires_at']))
+
+print("\nToken Expires at: ")
+print(datetime.datetime.fromtimestamp(response['json_data']['data']['expires_at']))
