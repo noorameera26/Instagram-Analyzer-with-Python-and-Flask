@@ -2,3 +2,6 @@
 *.pyc
 venv
 env.sh
+get_hashtag_infov2.py
+get-ig-page.py
+output.csv
